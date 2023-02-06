@@ -8,10 +8,10 @@ jobs:
         uses: actions/checkout@master
 
       - name: online-resume-deploy
-        uses: jenkey2011/.vuepress-deploy@master
+        uses: jenkey2011/vuepress-deploy@master
         env:
           ACCESS_TOKEN: ${{ secrets.ONLINE_RESUME }}
           TARGET_REPO: qinghuanI/online-resume
           TARGET_BRANCH: gh_pages
           BUILD_SCRIPT: yarn && yarn docs:build
-          BUILD_DIR: docs/..vuepress/dist
+          BUILD_DIR: docs/.vuepress/dist
