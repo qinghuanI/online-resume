@@ -10,7 +10,7 @@ jobs:
       - name: online-resume-deploy
         uses: jenkey2011/.vuepress-deploy@master
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ONLINE_RESUME }}
           TARGET_REPO: qinghuanI/online-resume
           TARGET_BRANCH: gh_pages
           BUILD_SCRIPT: yarn && yarn docs:build
